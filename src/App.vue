@@ -1,28 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <random-draw />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RandomDraw from './components/random-draw.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RandomDraw
   }
 }
 </script>
 
 <style lang="scss">
+html,
+body,
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-size: 18px;
+  // background-color: #2d3436;
+  font-family: "HelveticaNeue", Helvetica, "PingFangSC", "HiraginoSansGB",
+    "MicrosoftYaHei", "微软雅黑", Arial, sans-serif;
 }
 </style>
