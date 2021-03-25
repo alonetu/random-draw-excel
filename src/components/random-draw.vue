@@ -22,7 +22,7 @@
         </div>
         <div class="show-draw-item" v-for="item in drawList" :key="item.phone">
           <span style="fontSize: 32px;margin-left: 40px;">{{ item.name }}</span>
-          <span style="fontSize: 32px;margin-right: 40px;">{{ plusXing(item.phone) }}</span>
+          <span style="fontSize: 32px;margin-right: 40px;">{{ plusXing(item.phone.toString()) }}</span>
         </div>
       </div>
 
